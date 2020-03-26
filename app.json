@@ -1,0 +1,46 @@
+{
+  "pages": [
+    "pages/veido/veido",
+    "pages/picture/picture",
+    "pages/text/text",
+    "pages/sound/sound"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "color":"#bfbfbf",
+    "selectedColor":"#1296db",
+    "list": [
+      {
+        "pagePath": "pages/veido/veido",
+        "text": "视频",
+        "iconPath": "images/vedio.png",
+        "selectedIconPath": "images/vedio2.png"
+      },
+      {
+        "pagePath": "pages/picture/picture",
+        "text": "图片",
+        "iconPath": "images/pic.png",
+        "selectedIconPath": "images/pic2.png"
+      },
+      {
+        "pagePath": "pages/text/text",
+        "text": "段子",
+        "iconPath": "images/text.png",
+        "selectedIconPath": "images/text2.png"
+      },
+      {
+        "pagePath": "pages/sound/sound",
+        "text": "声音",
+        "iconPath": "images/sound.png",
+        "selectedIconPath": "images/sound2.png"
+      }
+    ]
+  }
+}
