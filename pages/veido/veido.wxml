@@ -1,2 +1,48 @@
-<!--pages/veido/veido.wxml-->
-<text>pages/veido/veido.wxml</text>
+
+<view>
+  <!-- <video src="http://media.w3.org/2010/05/sintel/trailer.mp4" binderror="videoErrorCallback"></video> -->
+  <!-- <image src="/images/liu.png"></image> -->
+
+  <view class="item" wx:for="{{list}}" wx:key="index">
+    <!-- 头部 -->
+    <view class="item-top">
+      <view class="top-left">
+        <image src="http://a0.att.hudong.com/27/10/01300000324235124757108108752.jpg"></image>
+        <view>
+          <text class="nick">搞笑大搜罗</text>
+          <text class="time">2020 0-15</text>
+        </view>
+      </view>
+      <view class="item-right">
+
+      </view>
+    </view>
+    <!-- 内容 -->
+    <view class="item-content">
+      <text>早晨的一天美好的时光</text>
+      <video src="{{item.address}}"></video>
+    </view>
+    <!-- 底部 -->
+    <view class="item-bottom">
+      <view>
+        <image src="/images/shang.png" mode="widthFix"></image>
+        <text>{{item.zan}}</text>
+      </view>
+      <view>
+        <image src="/images/xia.png" mode="widthFix"></image>
+        <text>{{item.buzan}}</text>
+      </view>
+      <view>
+        <image src="/images/zhuan.png" mode="widthFix"></image>
+        <text>{{item.zhuan}}</text>
+      </view>
+      <view>
+        <image src="/images/liu.png" mode="widthFix"></image>
+        <text>{{item.liu}}</text>
+      </view>
+    </view>
+
+  </view>
+
+
+</view>
