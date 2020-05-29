@@ -19,7 +19,13 @@ Page({
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-
+    const query = wx.createSelectorQuery()
+    query.select('#myCanvas').node().exec((res) => {
+      const canvas = res[0].node
+      const gl = canvas.getContext('webgl')
+      gl.clearColor(1, 0, 1, 1)
+      gl.clear(gl.COLOR_BUFFER_BIT)
+    })
   },
 
   /**

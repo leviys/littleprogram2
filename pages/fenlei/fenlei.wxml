@@ -1,0 +1,32 @@
+<!--pages/fenlei/fenlei.wxml-->
+<!-- <text>pages/fenlei/fenlei.wxml</text> -->
+
+<view class="box">
+    <view class="top">
+       <image src="/images/search.png"></image>
+       <input placeholder="商品搜索,共239好物"></input>
+    </view>
+</view>
+
+<!-- 分类 -->
+<view class="cate">
+    <view class="cate-left">
+       <scroll-view class='scoll' scroll-y="true">
+          <view wx:for="{{cateList}}" wx:key='index' class="{{currentid===item.id?'active': ''}}" data-id="{{item.id}}" bindtap="change">{{item.name}}</view>         
+       </scroll-view>
+    </view>
+    <view class="cate-right">
+       <scroll-view scroll-y="true">
+          <view>
+             <view style="text-align:center;">
+                 <image src="/images/pro1.jpg" class="mainpic"></image>
+                 <text class="title">--居家分类---</text>
+             </view>
+             <view class="items">
+                 <image src="/images/pro2.jpg" mode="widthFix"></image>
+                 <text class="title">布衣软装</text>
+             </view>
+          </view>
+       </scroll-view>
+    </view>
+</view>

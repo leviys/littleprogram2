@@ -1,0 +1,51 @@
+<!--pages/cart/cart.wxml-->
+<!-- <text>pages/cart/cart.wxml</text> -->
+<view class="box">
+	<view class="top">
+		<view>
+			<text class="circle"></text>
+			<text class="title">30天无忧退货</text>
+		</view>
+		<view>
+			<text class="circle"></text>
+			<text class="title">48小时快速退款</text>
+		</view>
+		<view>
+			<text class="circle"></text>
+			<text class="title">满88免邮费</text>
+		</view>
+	</view>
+</view>
+
+<!-- 购物车 -->
+<view class="cart">
+    <view class="item" data-index="{{index}}" wx:for="{{cartList}}" wx:key='index' bindtouchstart="tstart" bindtouchmove="tmove" bindtouchend="tend"> 
+        <view class="item-left">
+           <view class="{{item.chcked?'active' :'select'}}" bindtap="changeSelcet" data-index="{{index}}"></view>
+           <view class="detail">
+             <view class="imgwrap">
+               <image src="{{item.imgsrc}}" class="img"></image>
+             </view>
+             <view style="display:flex; flex-direction: column;margin-left:16rpx;">
+                 <text class="title">{{item.des}}</text>
+                 <text class="price">￥{{item.price}}</text>
+             </view>
+           </view>
+        </view>
+        <view class="item-right"> x{{item.num}}</view>
+        <view class="del" wx:if="{{item.isShow}}">删除</view>
+    </view>
+</view>
+
+<!-- 结算 -->
+
+<view class="js">
+    <view class="js-left">
+      <view class="{{allSelct?'active':'select'}}" bindtap="selectAll"></view>
+      <text>全选({{selectNum}})</text>
+    </view>
+    <view class="js-right">
+       <text class="totleprice">￥{{totalpric}}</text>
+       <view class="order">下单</view>
+    </view>
+</view>

@@ -20,16 +20,16 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    console.log(this.route)
+    console.log(getCurrentPages())
+    wx.setStorageSync({    //同步  执行完成下面代码才能执行
+      data: '123456',
+      key: 'demo',
+    })
     this.setData({
       list:list.data
     })
-    console.log(this.data.list)
-    // wx.request({
-    //   url: 'https://api.budejie.com/api/api_open.php?a=list&c=data&type=41',
-    //   success:function(res){
-    //     console.log(res)
-    //   }
-    // })
+
   },
 
   /**

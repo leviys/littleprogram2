@@ -17,27 +17,27 @@ let data = [
     buzan: 20,
     zhuan: 6,
     liuyan: 40,
-    address: "/images/shi2.mp4"
+    address: ""
   },
   {
     zan: 110,
     buzan: 20,
     zhuan: 6,
     liuyan: 40,
-    address: "/images/shi3.mp4"
+    address: ""
   }, {
     zan: 110,
     buzan: 20,
     zhuan: 6,
     liuyan: 40,
-    address: "/images/shi4.mp4"
+    address: ""
   }
   , {
     zan: 110,
     buzan: 20,
     zhuan: 6,
     liuyan: 40,
-    address: "/images/shi5.mp4"
+    address: ""
   }
 ]
 

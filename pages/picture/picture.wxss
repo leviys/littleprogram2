@@ -1,1 +1,30 @@
 /* pages/picture/picture.wxss */
+
+.scoll{
+  white-space: nowrap;
+}
+
+.scoll view {
+  width: 200rpx;
+  height: 200rpx;
+}
+.v1{
+  background-color: red;
+  display: inline-block;
+}
+.v2{
+  background-color:royalblue;
+  display: inline-block;
+}
+.v3{
+  background-color: rebeccapurple;
+  display: inline-block;
+}
+.v4{
+  background-color:burlywood;
+  display: inline-block;
+}
+.v5{
+  background-color: yellowgreen;
+  display: inline-block;
+}

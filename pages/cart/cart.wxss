@@ -1,0 +1,119 @@
+/* pages/cart/cart.wxss */
+
+.top{
+  display: flex;
+  background-color:#eee;
+  /* justify-content: space-around; */
+  padding:15rpx 0;
+}
+.top view{
+  width: calc(100%/3);
+  text-align: center;
+}
+.top .title{
+  font-size: 24rpx;
+}
+.top .circle{
+  display: inline-block;
+  width: 15rpx;
+  height: 15rpx;
+  border-radius: 50%;
+  border:1px solid red;
+}
+
+/* 购物车 */
+
+.cart{
+  padding:20rpx 0 20rpx 20rpx;
+}
+.item{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 20rpx;
+}
+.item-left{
+  display: flex;
+  align-items: center;
+}
+.detail{
+  display: flex;
+   align-items: center;
+}
+.detail .title{
+  font-size: 28rpx;
+  color: #333;
+}
+.detail .price{
+  color: red;
+}
+.img{
+  width: 88rpx;
+  height: 88rpx;
+  vertical-align: middle;
+}
+
+.active{
+  width: 60rpx;
+  height: 60rpx;
+  background: url('http://nos.netease.com/mailpub/hxm/yanxuan-wap/p/20150730/style/img/icon-normal/checkbox-checked-822e54472a.png')no-repeat center center;
+  background-size: 50rpx 50rpx;
+}
+.select{
+  width: 60rpx;
+  height: 60rpx;
+  /* padding:15rpx; */
+  background: url('http://nos.netease.com/mailpub/hxm/yanxuan-wap/p/20150730/style/img/icon-normal/checkbox-0e09baa37e.png') no-repeat center center;
+  background-size: 50rpx 50rpx;
+}
+
+.imgwrap{
+  width: 125rpx;
+  height: 125rpx;
+  background:#f4f4f4;
+  text-align: center;
+  line-height: 125rpx;
+}
+
+.js{
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  width:100%;
+  padding: 20rpx 0 0 20rpx;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+.js-left{
+  display: flex;
+  align-items: center;
+}
+.js-right{
+  display: flex;
+  align-items: center;
+}
+.totleprice{
+  color: red;
+  margin-right: 20rpx;
+}
+.order{
+  width: 200rpx;
+  background:#b4282d;
+  color: white;
+  height: 100rpx;
+  text-align: center;
+  line-height: 100rpx;
+}
+
+.item-right{
+  height: 100%;
+  padding-right: 20rpx;
+}
+.del{
+  background-color:#b4282d ;
+  color: white;
+  height: 124rpx;
+  line-height: 124rpx;
+  padding:0 10rpx;
+
+}

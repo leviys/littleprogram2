@@ -1,2 +1,5 @@
-<!--pages/text/text.wxml-->
-<text>pages/text/text.wxml</text>
+<!-- 地图 -->
+<map longitude="112.93134000000002" latitude="28.23529"></map>
+
+<!-- 画布 -->
+  <canvas type="webgl" id="myCanvas"></canvas>

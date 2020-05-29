@@ -1,11 +1,49 @@
-// pages/sound/sound.js
+// pages/fenlei/fenlei.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+     currentid:1,
+     cateList:[
+       {
+         name:'居家',
+         id:1
+       },
+       {
+        name:'餐厨',
+        id:2
+      },
+      {
+        name:'饮食',
+        id:3
+      },
+      {
+        name:'配件',
+        id:4
+      },
+      {
+        name:'服装',
+        id:5
+      },
+      {
+        name:'婴童',
+        id:6
+      },
+      {
+        name:'杂货',
+        id:7
+      },
+      {
+        name:'洗护',
+        id:8
+      },
+      {
+        name:'志趣',
+        id:9
+      }
+     ]
   },
 
   /**
@@ -13,6 +51,17 @@ Page({
    */
   onLoad: function (options) {
 
+  },
+  //小程序是不能直接传参的
+  // change(id){
+  //    console.log(id)
+  // },
+    change(event){
+      var that =  this
+    //  console.log(event.target.dataset.id)
+     that.setData({
+      currentid:event.target.dataset.id
+     })
   },
 
   /**
